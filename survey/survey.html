@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>調查表</title>
+        <style>
+            body{background:yellow}
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend><h1>滿意度調查表</h1></legend>
+            <label>姓名:<input name="name" type="text" size="10"><br>
+            性別:<input name="sex" type="radio" value="male">男
+                 <input name="sex" type="radio" value="female">女</label>
+                 <br>
+        </fieldset>
+        <fieldset>
+            <legend><h3><i>你今晚最喜歡的餐點:</i></h3></legend>
+            <label><input name="food" type="checkbox" value="main meal">主餐
+            <input name="food" type="checkbox" value="bread">麵包
+            <input name="food" type="checkbox" value="soup">濃湯
+            <input name="food" type="checkbox" value="appetizer">開胃菜
+            <input name="food" type="checkbox" value="dessert">甜點</label><br>
+            <button onclick="document.write('<p>這裡真的沒有功能</p>');">確認!</button>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend><h3><i>對餐點的滿意度:</i></h3></legend>
+            <label>開胃菜:不喜歡??<input name="Meals" type="range" min="1" max="5">喜歡!!<br>
+            濃湯:不喜歡??<input name="Meals" type="range" min="1" max="5">喜歡!!<br>
+            副餐:不喜歡??<input name="Meals" type="range" min="1" max="5">喜歡!!<br>
+            主餐:不喜歡??<input name="Meals" type="range" min="1" max="5">喜歡!!<br>
+            甜點:不喜歡??<input name="Meals" type="range" min="1" max="5">喜歡!!</label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend><h3><i>對服務的滿意度:</i></h3></legend>
+            <label>送餐速度:不喜歡??<input name="Serve" type="range" min="1" max="5">喜歡!!<br>
+            桌邊服務:不喜歡??<input name="Serve" type="range" min="1" max="5">喜歡!!<br>
+            人員態度:不喜歡??<input name="Serve" type="range" min="1" max="5">喜歡!!</label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend><h3><i>對環境的滿意度:</i></h3></legend>
+            <label>燈光:不喜歡??<input name="Meals" type="range" min="1" max="5">喜歡!!<br>
+            桌位:不喜歡??<input name="Meals" type="range" min="1" max="5">喜歡!!<br>
+            地面:不喜歡??<input name="Meals" type="range" min="1" max="5">喜歡!!</label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend><h1>對餐廳的建議</h1></legend>
+            <textarea name="comment" rows="5" cols="20"></textarea><br>
+            <label>E-mail:<input name="email" type="email"><br>
+            連絡電話:<input name="tel" id="tel" type="tel"></label><br>
+            <input type="reset" value="清除">
+            <button onclick="document.write('<p>不要再點了!!!</p>');">登入!</button>
+        </fieldset>
+    </body>
+</html>
